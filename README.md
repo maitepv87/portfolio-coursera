@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# 💻 Final Advanced React Project – Coursera Portfolio Lab
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the final project submitted for the Advanced React course on Coursera. It represents a single-page portfolio application built with React and Chakra UI, applying frontend principles, component architecture, and form validation techniques covered throughout the course.
 
-## Available Scripts
+## 🚀 Technologies Used
 
-In the project directory, you can run:
+- **React 18** – SPA architecture
+- **Chakra UI** – UI components and responsive design
+- **Formik + Yup** – Form management and validation
+- **FontAwesome** – Iconography
+- **Custom Hooks** – Business logic encapsulation
+- **Responsive Layout** – Mobile-first design
+- **Accessibility Enhancements** – Keyboard, screen reader support
+- **Real Project URLs** – Hosted on Vercel
 
-### `npm start`
+## 📂 Sections
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Header** – Social media links & internal navigation with smooth scroll
+- **Landing Section** – Avatar, greeting and brief bio
+- **Projects** – Dynamic card-based grid showcasing:
+  - FormKit
+  - Firebase Auth
+  - Pokémon Toolkit
+  - GIF Explorer
+  - Map Explorer
+- **Contact Me** – Form with real-time validation and status alerts
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📬 Contact
 
-### `npm test`
+Feel free to reach out via the contact form in the app, or connect with me on:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- GitHub: [@maitepv87](https://github.com/maitepv87)
+- LinkedIn: [Maite Pérez Vento](https://linkedin.com/in/maite-perez-vento)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧪 Running Locally
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run this app on your local machine:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/maitepv87/react-portfolio-coursera-final.git
+cd react-portfolio-coursera-final
+npm install
+npm start
 
-### `npm run eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📁 Notes for Reviewers
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project was developed strictly following the lab instructions from Coursera. It includes:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Controlled form components via Formik**
+- **Validation powered by Yup**
+- **Simulated submission** with randomized success/error responses
+- **Responsive UI** and accessibility adjustments
+- **Header show/hide animation on scroll** _(Bonus Task)_
