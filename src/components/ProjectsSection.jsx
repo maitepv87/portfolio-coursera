@@ -1,25 +1,6 @@
 import { VStack, Heading, Box } from "@chakra-ui/react";
 import Card from "./Card";
-
-const projects = [
-  {
-    title: "Responsive Portfolio",
-    description: "A modern React portfolio using Chakra UI and Vercel.",
-    imageUrl: "https://source.unsplash.com/random/300x200?portfolio",
-  },
-  {
-    title: "Lucky Shrub",
-    description:
-      "A fictional plant shop web app built with accessibility in mind.",
-    imageUrl: "https://source.unsplash.com/random/300x200?plants",
-  },
-  {
-    title: "Todo App",
-    description:
-      "Interactive task manager with localStorage and smooth transitions.",
-    imageUrl: "https://source.unsplash.com/random/300x200?tasks",
-  },
-];
+import { projects } from "../data/projects";
 
 export const ProjectsSection = () => {
   return (
@@ -35,6 +16,7 @@ export const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imageUrl={project.imageUrl}
+            projectUrl={project.projectUrl}
           />
         ))}
       </VStack>
