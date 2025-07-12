@@ -6,11 +6,8 @@ import {
   Textarea,
   Button,
   Text,
-  Stack,
 } from "@chakra-ui/react";
-import { RadioGroup, Radio } from "@chakra-ui/radio";
 import { Alert } from "@chakra-ui/react";
-
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useSubmit } from "../customHooks/useSubmit";
@@ -18,7 +15,7 @@ import { onlyLetters } from "../utils/inputValidation";
 import { useAlertContext } from "../context/alertContext";
 
 export const ContactMeSection = () => {
-  const { submit, isLoading, response, setResponse } = useSubmit();
+  const { submit, isLoading, response } = useSubmit();
   const { onOpen } = useAlertContext();
 
   const validationSchema = Yup.object({
@@ -28,7 +25,6 @@ export const ContactMeSection = () => {
     email: Yup.string()
       .email("Invalid email address")
       .required("Email is required"),
-    type: Yup.string().required("Please select a type of enquiry"),
     comment: Yup.string().required("Message is required"),
   });
 
@@ -36,7 +32,6 @@ export const ContactMeSection = () => {
     initialValues: {
       firstName: "",
       email: "",
-      type: "",
       comment: "",
     },
     validationSchema,
@@ -108,36 +103,6 @@ export const ContactMeSection = () => {
             )}
           </Box>
 
-          {/* Type */}
-          <Box>
-            <Text mb={2} fontWeight="medium">
-              Type of Enquiry
-            </Text>
-
-            <RadioGroup
-              value={formik.values.type}
-              onChange={(value) => formik.setFieldValue("type", value)}
-            >
-              <Stack direction="column" spacing={2}>
-                <Radio value="hire" colorScheme="teal">
-                  Hire Me
-                </Radio>
-                <Radio value="collab" colorScheme="teal">
-                  Collaboration
-                </Radio>
-                <Radio value="feedback" colorScheme="teal">
-                  Feedback
-                </Radio>
-              </Stack>
-            </RadioGroup>
-
-            {formik.touched.type && formik.errors.type && (
-              <Text color="red.500" fontSize="sm" mt={1}>
-                {formik.errors.type}
-              </Text>
-            )}
-          </Box>
-
           {/* Message */}
           <Box>
             <Text mb={2} fontWeight="medium">
@@ -182,17 +147,6 @@ export const ContactMeSection = () => {
               </Alert.Content>
             </Alert.Root>
           )}
-
-          <Button
-            onClick={() =>
-              setResponse({
-                type: "success",
-                message: "Prueba visual funcionando ✅",
-              })
-            }
-          >
-            Probar alerta
-          </Button>
         </VStack>
       </form>
     </Box>
