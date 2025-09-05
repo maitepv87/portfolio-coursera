@@ -1,8 +1,8 @@
-# 💻 Final Advanced React Project – Coursera Portfolio Lab
+# Final Advanced React Project – Coursera Portfolio Lab
 
 This repository contains the final project submitted for the Advanced React course on Coursera. It represents a single-page portfolio application built with React and Chakra UI, applying frontend principles, component architecture, and form validation techniques covered throughout the course.
 
-## 🚀 Technologies Used
+## Technologies Used
 
 - **React 18** – SPA architecture
 - **Chakra UI** – UI components and responsive design
@@ -13,7 +13,7 @@ This repository contains the final project submitted for the Advanced React cour
 - **Accessibility Enhancements** – Keyboard, screen reader support
 - **Real Project URLs** – Hosted on Vercel
 
-## 📂 Sections
+## Sections
 
 - **Header** – Social media links & internal navigation with smooth scroll
 - **Landing Section** – Avatar, greeting and brief bio
@@ -25,7 +25,7 @@ This repository contains the final project submitted for the Advanced React cour
   - Map Explorer
 - **Contact Me** – Form with real-time validation and status alerts
 
-## 📬 Contact
+## Contact
 
 Feel free to reach out via the contact form in the app, or connect with me on:
 
@@ -34,19 +34,30 @@ Feel free to reach out via the contact form in the app, or connect with me on:
 
 ---
 
-## 🧪 Running Locally
+## Running Locally
 
-To run this app on your local machine:
+Follow these steps to run the project locally:
+
+1. Clone the repository:
 
 ```bash
-git clone https://github.com/maitepv87/react-portfolio-coursera-final.git
-cd react-portfolio-coursera-final
-npm install
-npm start
-
+git clone https://github.com/maitepv87/portfolio-coursera.git
+cd portfolio-coursera
 ```
 
-## 📁 Notes for Reviewers
+2. Install dependencie:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm start
+```
+
+## Notes for Reviewers
 
 This project was developed strictly following the lab instructions from Coursera. It includes:
 
